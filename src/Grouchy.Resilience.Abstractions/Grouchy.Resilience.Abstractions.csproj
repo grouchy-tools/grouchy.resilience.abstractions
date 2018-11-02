@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!--<TargetFrameworks>net451;netstandard2.0</TargetFrameworks>-->
+    <Product>Grouchy.Resilience.Abstractions</Product>
+    <Title>Grouchy.Resilience.Abstractions</Title>
+    <Authors>Andrew Craven</Authors>
+    <RootNamespace>Grouchy.Resilience.Abstractions</RootNamespace>
+    <AssemblyName>Grouchy.Resilience.Abstractions</AssemblyName>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Grouchy.Resilience.Abstractions</PackageId>
+    <PackageLicenseUrl>https://github.com/grouchy-tools/grouchy.resilience.abstractions/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/grouchy-tools/grouchy.resilience.abstractions</RepositoryUrl>
+  </PropertyGroup>
+</Project>
