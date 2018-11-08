@@ -24,11 +24,11 @@ task Build {
 
    if ($VersionSuffix -eq $null -or $VersionSuffix -eq "") {
       exec { dotnet build $ProjectPath -c $Configuration -f netstandard2.0 --no-incremental }
-#      exec { dotnet build $ProjectPath -c $Configuration -f net451 --no-incremental }
+      exec { dotnet build $ProjectPath -c $Configuration -f net451 --no-incremental }
    }
    else {
       exec { dotnet build $ProjectPath -c $Configuration -f netstandard2.0 --no-incremental --version-suffix $VersionSuffix }
-#      exec { dotnet build $ProjectPath -c $Configuration -f net451 --no-incremental --version-suffix $VersionSuffix }
+      exec { dotnet build $ProjectPath -c $Configuration -f net451 --no-incremental --version-suffix $VersionSuffix }
    }
 }
 

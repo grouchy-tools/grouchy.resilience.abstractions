@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <!--<TargetFrameworks>net451;netstandard2.0</TargetFrameworks>-->
+    <TargetFrameworks>net451;netstandard2.0</TargetFrameworks>
     <Product>Grouchy.Resilience.Abstractions</Product>
     <Title>Grouchy.Resilience.Abstractions</Title>
     <Authors>Andrew Craven</Authors>
@@ -17,4 +16,10 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/grouchy-tools/grouchy.resilience.abstractions</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+  </ItemGroup>
 </Project>

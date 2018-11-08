@@ -4,6 +4,8 @@ namespace Grouchy.Resilience.Abstractions.CircuitBreaking
 {
    public interface ICircuitBreakerState
    {
+      string Policy { get; }
+      
       double ClosedPct { get; }
 
       bool ShouldAccept();
